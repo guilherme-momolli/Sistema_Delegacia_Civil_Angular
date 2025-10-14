@@ -1,0 +1,14 @@
+.flex-center { display: flex; justify-content: center; align-items: center; }
+.flex-column { display: flex; flex-direction: column; }
+
+.text-center { text-align: center; }
+.text-uppercase { text-transform: uppercase; }
+
+.mt-1 { margin-top: 0.25rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mx-2 { margin-left: 0.5rem; margin-right: 0.5rem; }
+.p-2  { padding: 0.5rem; }
+
+$z-index-modal: 1050;
+$z-index-dropdown: 1000;
+$z-index-toast: 1100;

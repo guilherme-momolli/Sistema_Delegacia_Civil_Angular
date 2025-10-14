@@ -1,0 +1,32 @@
+
+@use 'assets/styles/variables' as vars;
+@use 'assets/styles/mixins' as mixins;
+@use 'assets/styles/themes' as themes;
+@use 'assets/styles/animations' as anims;
+@use 'assets/styles/helpers' as helpers;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: vars.$font-family-base;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @include mixins.respond-to(vars.$breakpoint-md) {
+    padding: 0 0.5rem;
+    }
+
+@include mixins.flex-center('column', 'flex-start', 'flex-start');
+}

@@ -1,0 +1,19 @@
+<div class="input-group" [class.has-error]="errorMessage">
+  <label *ngIf="label">{{ label }}</label>
+
+  <div class="input-wrapper">
+    <i *ngIf="icon" [class]="icon"></i>
+    <input
+      [type]="type"
+      [value]="value"
+      [placeholder]="placeholder"
+      [disabled]="disabled"
+      (input)="onInputChange($event)"
+      (blur)="onTouched()"
+    />
+  </div>
+
+  <small class="error-message" *ngIf="errorMessage">
+    {{ errorMessage }}
+  </small>
+</div>

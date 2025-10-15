@@ -1,0 +1,12 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <span>Sistema Delegacia Civil</span>
+  </div>
+
+  <div class="navbar-actions">
+    <button class="theme-toggle" (click)="toggleTheme()">
+      <span *ngIf="themeService.isDarkMode()">🌞</span>
+      <span *ngIf="!themeService.isDarkMode()">🌙</span>
+    </button>
+  </div>
+</nav>

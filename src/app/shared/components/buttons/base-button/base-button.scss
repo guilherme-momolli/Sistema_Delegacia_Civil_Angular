@@ -1,0 +1,50 @@
+@use '../../../../../assets/styles/variables' as vars;
+@use '../../../../../assets/styles/mixins' as mixins;
+
+.button {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &.primary {
+    background-color: var(--color-primary);
+    color: #fff;
+    &:hover {
+      background-color: color-mix(in srgb, var(--color-primary) 90%, black);
+    }
+  }
+
+  &.secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+    &:hover {
+      background-color: color-mix(in srgb, var(--color-secondary) 90%, black);
+    }
+  }
+
+  &.success {
+    background-color: var(--color-success);
+    color: #fff;
+    &:hover {
+      background-color: color-mix(in srgb, var(--color-success) 90%, black);
+    }
+  }
+
+  &.danger {
+    background-color: var(--color-danger);
+    color: #fff;
+    &:hover {
+      background-color: color-mix(in srgb, var(--color-danger) 90%, black);
+    }
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}

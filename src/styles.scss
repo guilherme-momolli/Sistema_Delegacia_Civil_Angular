@@ -1,9 +1,10 @@
-
-@use 'assets/styles/variables' as vars;
-@use 'assets/styles/mixins' as mixins;
-@use 'assets/styles/themes' as themes;
-@use 'assets/styles/animations' as anims;
-@use 'assets/styles/helpers' as helpers;
+@use 'bootstrap/scss/bootstrap';
+@use 'bootstrap-icons/font/bootstrap-icons.css'; 
+@use 'styles/variables' as vars;
+@use 'styles/mixins' as mixins;
+@use 'styles/themes' as themes;
+@use 'styles/animations' as anims;
+@use 'styles/helpers' as helpers;
 
 * {
   margin: 0;

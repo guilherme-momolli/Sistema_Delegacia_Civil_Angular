@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { SharedModule } from '../../shared/shared.module';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { BaseButton} from '../../shared/components/buttons/base-button/base-button';
+import { BaseButton} from '../../shared/components/ui/buttons/base-button/base-button';
 
 @Component({
   selector: 'app-landing-page',
